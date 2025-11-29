@@ -38,7 +38,16 @@ const UploadForm = ({ onResult }) => {
     try {
       setLoading(true);
       const data = await checkPlagiarism(formData);
-      onResult(data);
+      // Attach metadata so App can persist history entries
+      const withMeta = {
+        ...data,
+        _meta: {
+          suspiciousName: fileName1 || file1?.name || 'Suspicious',
+          sourceName: fileName2 || file2?.name || 'Source',
+          timestamp: new Date().toISOString(),
+        },
+      };
+      onResult(withMeta);
     } catch (err) {
       console.error(err);
       setError("❌ Error checking plagiarism. Please ensure the backend is running and try again.");
