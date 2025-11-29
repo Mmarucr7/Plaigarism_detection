@@ -50,7 +50,7 @@ const UploadForm = ({ onResult }) => {
   return (
     <form onSubmit={handleSubmit} className="upload-form">
       <div className="field">
-        <label>📄 Document A (Suspected)</label>
+        <label>📄 Suspicious Document</label>
         <p className="field-description">Upload the document you want to check for plagiarism</p>
         <input
           type="file"
@@ -60,7 +60,7 @@ const UploadForm = ({ onResult }) => {
         {fileName1 && <div className="file-info">{fileName1}</div>}
       </div>
       <div className="field">
-        <label>📚 Document B (Reference)</label>
+        <label>📚 Source Document</label>
         <p className="field-description">Upload the reference document to compare against</p>
         <input
           type="file"

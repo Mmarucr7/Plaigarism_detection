@@ -3,10 +3,14 @@ import React, { useState } from "react";
 import UploadForm from "./components/UploadForm";
 import HighlightedText from "./components/HighlightedText";
 import MatchesTable from "./components/MatchesTable";
+import WelcomeScreen from "./components/WelcomeScreen";
+
 
 function App() {
+  const [showApp, setShowApp] = useState(false);
   const [result, setResult] = useState(null);
   const [hasResults, setHasResults] = useState(false);
+  const [uploadKey, setUploadKey] = useState(0);
 
   const handleResult = (data) => {
     setResult(data);
@@ -16,7 +20,13 @@ function App() {
   const handleReset = () => {
     setResult(null);
     setHasResults(false);
+    // Increment uploadKey to force remount of UploadForm and clear selected files
+    setUploadKey((k) => k + 1);
   };
+
+  if (!showApp) {
+    return <WelcomeScreen onStart={() => setShowApp(true)} />;
+  }
 
   return (
     <div className="app">
@@ -28,7 +38,7 @@ function App() {
       <main className="main">
         <section className="card">
           <h2>📤 Upload Documents</h2>
-          <UploadForm onResult={handleResult} />
+          <UploadForm key={uploadKey} onResult={handleResult} />
         </section>
 
         {hasResults && result && (
