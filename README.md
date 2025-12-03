@@ -82,7 +82,6 @@ Recent checks are stored in `localStorage`, allowing:
 
 * **React**
 * **Vite**
-* **Vanilla CSS**
 
 ---
 
