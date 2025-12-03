@@ -261,14 +261,6 @@ README.md
 * Add **dual-document highlighting**
 * Deploy backend to Render / Railway and frontend to Netlify
 
----
-
-## 📄 License
-
-You may add MIT / Apache-2.0 here if you want others to reuse your code.
-
----
-
 ## ⭐ Contributing
 
 Pull requests and suggestions are welcome!
