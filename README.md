@@ -19,7 +19,7 @@ Ideal for academic use, NLP learning, or demonstration of modern semantic search
 
 ### 🔹 **Semantic Plagiarism Detection**
 
-* Detects more than copy-paste — catches **paraphrased text** using neural embeddings.
+* Detects more than copy-paste catches **paraphrased text** using neural embeddings.
 * Classifies every sentence into:
 
   * 🔴 **Exact Match** — identical content
