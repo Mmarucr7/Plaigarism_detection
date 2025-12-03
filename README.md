@@ -246,8 +246,13 @@ README.md
 
 ## 🧪 Future Improvements
 
-* Add NLTK / spaCy **sentence segmentation**
-* Add **file size limits** and **corrupt file handling**
+* Multiple Reference Documents
+* Paragraph-Level Analysis
+* AI Explanations
+* PDF Export Reports
+* Cloud Deployment
+* Rewrite Suggestions
+
 * Improve speed using:
 
   * `semantic_search` instead of full NxM matrix
