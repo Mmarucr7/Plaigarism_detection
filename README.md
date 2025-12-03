@@ -1,8 +1,3 @@
-Here is a **clean, professional, copy-paste-ready README.md** tailored exactly to your backend + frontend + ML pipeline.
-This will significantly upgrade your repo and make it portfolio-quality.
-
----
-
 # 📋 Plagiarism Detector
 
 ### Advanced Sentence-BERT Powered Document Similarity Checker
